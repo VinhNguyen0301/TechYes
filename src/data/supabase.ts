@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import { slugify } from "@util/helpers";
 
 const supabaseUrl = "https://pfourseopabbkzxtwolb.supabase.co";
-// console.log(import.meta.env);
+console.log(import.meta.env);
 const supabaseKey =
   import.meta.env.SUPABASE_KEY || import.meta.env.PUBLIC_SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
