@@ -11,6 +11,7 @@ export async function getStaticPaths() {
   const posts = (await getCollection("menu")).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
   );
+  console.log('PORST', posts)
   const count = posts.length;
   return posts.map((post, index) => {
     let next: CollectionEntry<"menu"> | null = null;
